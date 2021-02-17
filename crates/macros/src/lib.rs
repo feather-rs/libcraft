@@ -2,7 +2,7 @@ extern crate proc_macro;
 
 use proc_macro::TokenStream;
 use quote::quote;
-use syn::{self, parse_macro_input, Data, DeriveInput, Error, Fields, Result};
+use syn::{self, parse_macro_input, Data, DeriveInput, Error, Fields, Result, Ident};
 
 #[proc_macro_derive(BlockData)]
 pub fn block_data_derive(input: TokenStream) -> TokenStream {
@@ -13,34 +13,22 @@ pub fn block_data_derive(input: TokenStream) -> TokenStream {
 
 fn impl_block_data(ast: &DeriveInput) -> Result<TokenStream> {
     let name = &ast.ident;
-    let field;
+    let fields: Vec<Ident>;
 
     if let Data::Struct(data) = &ast.data {
         if let Fields::Named(named_fields) = &data.fields {
-            if named_fields.named.len() != 1 {
-                return Err(Error::new(
-                    name.span(),
-                    "Can't derive BlockData for struct with more than 1 named field",
-                ));
-            };
-            field = named_fields
-                .named
-                .first()
-                .unwrap()
-                .to_owned()
-                .ident
-                .unwrap();
+            fields = named_fields.named.iter().map(|field| field.to_owned().ident.unwrap()).collect();
         } else {
             return Err(Error::new(
                 name.span(),
                 "Can't derive BlockData for a struct with no named fields",
-            ));
+            ))
         }
     } else {
         return Err(Error::new(
             name.span(),
             "Can't derive BlockData for a non struct",
-        ));
+        ))
     }
 
     let gen = quote! {
@@ -49,11 +37,11 @@ fn impl_block_data(ast: &DeriveInput) -> Result<TokenStream> {
             where
                 Self: Sized,
             {
-                Some(Self { #field: raw.#field? })
+                Some(Self { #(#fields: raw.#fields?),*, })
             }
 
             fn apply(&self, raw: &mut RawBlockStateProperties) {
-                raw.#field.replace(self.#field);
+                #(raw.#fields.replace(self.#fields));*;
             }
         }
     };
