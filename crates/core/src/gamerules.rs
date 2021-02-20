@@ -26,14 +26,12 @@ pub struct GameRules {
     fall_damage: bool,
     fire_damage: bool,
     forgive_dead_players: bool,
-    // freeze_damage: bool, UPCOMING to 1.17
     keep_inventory: bool,
     log_admin_commands: bool,
     max_command_chain_length: u32,
     max_entity_cramming: u32,
     mob_griefing: bool,
     natural_regeneration: bool,
-    // players_sleeping_percentage: u32, UPCOMING TO 1.17
     random_tick_speed: u32,
     reduced_debug_info: bool,
     send_command_feedback: bool,

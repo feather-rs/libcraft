@@ -4,6 +4,7 @@ pub mod block;
 mod consts;
 mod enchantment;
 mod gamemode;
+mod gamerules;
 mod positions;
 
 pub use consts::*;

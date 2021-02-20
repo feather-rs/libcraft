@@ -1,5 +1,5 @@
 /target
 Cargo.lock
 
-# IntelliJ IDEA files
+# Exclude IntelliJ IDEA files.
 /.idea
