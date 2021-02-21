@@ -62,6 +62,7 @@ def output(path: str, content: str):
     f.write("// This file is @generated. Please do not edit.\n")
     f.write(content)
     f.close()
+    print(f"Generated {path.name}")
 
     rustfmt(path)
 
@@ -143,9 +144,7 @@ def generate_enum_property(
 
 def generate_enum(name: str, variants: list[str]):
     """Generates an enum definition with the provided variants."""
-    body = ""
-    for variant in variants:
-        body += f"{variant},"
+    body = ','.join(variants) + ','
 
     return f"""
     #[derive(Copy, Clone, Debug, PartialEq, Eq, Hash, PartialOrd, Ord)]

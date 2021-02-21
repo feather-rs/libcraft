@@ -1,17 +1,13 @@
-import common
-
-data = common.load_minecraft_json("blocks.json")
+from common import load_minecraft_json, camel_case, generate_enum, generate_enum_property, output
 
 # build item ID => item kind index
-item_data = common.load_minecraft_json("items.json")
 item_kinds_by_id = {}
-for item in item_data:
-    item_kinds_by_id[item['id']] = common.camel_case(item['name'])
+for item in load_minecraft_json("items.json"):
+    item_kinds_by_id[item['id']] = camel_case(item['name'])
 
 # Build material name => dig multipliers index
-material_data = common.load_minecraft_json("materials.json")
 material_dig_multipliers = {}
-for name, material in material_data.items():
+for name, material in load_minecraft_json("materials.json").items():
     dig_multipliers = {}
     for item_id, multiplier in material.items():
         dig_multipliers[item_kinds_by_id[int(item_id)]] = float(multiplier)
@@ -41,8 +37,8 @@ light_filters = {}
 dig_multipliers = {}
 solids = {}
 
-for block in data:
-    variant = common.camel_case(block['name'])
+for block in load_minecraft_json("blocks.json"):
+    variant = camel_case(block['name'])
     blocks.append(variant)
     ids[variant] = block['id']
     names[variant] = block['name']
@@ -79,18 +75,18 @@ for block in data:
         Some(TOOLS)
         """
 
-output = "#[derive(num_derive::FromPrimitive, num_derive::ToPrimitive)]" + common.generate_enum("BlockKind", blocks)
-output += common.generate_enum_property("BlockKind", "id", "u32", ids, True)
-output += common.generate_enum_property("BlockKind", "name", "&str", names, True, "&'static str")
-output += common.generate_enum_property("BlockKind", "display_name", "&str", display_names, True, "&'static str")
-output += common.generate_enum_property("BlockKind", "hardness", "f32", hardnesses)
-output += common.generate_enum_property("BlockKind", "diggable", "bool", diggables)
-output += common.generate_enum_property("BlockKind", "transparent", "bool", transparents)
-output += common.generate_enum_property("BlockKind", "light_emission", "u8", light_emissions)
-output += common.generate_enum_property("BlockKind", "light_filter", "u8", light_filters)
-output += common.generate_enum_property("BlockKind", "solid", "bool", solids)
-output += material_constants
-output += common.generate_enum_property("BlockKind", "dig_multipliers", "&'static [(crate::Item, f32)]", dig_multipliers)
-output += common.generate_enum_property("BlockKind", "harvest_tools", "Option<&'static [crate::Item]>", harvest_tools)
+output_data = "#[derive(num_derive::FromPrimitive, num_derive::ToPrimitive)]" + generate_enum("BlockKind", blocks)
+output_data += generate_enum_property("BlockKind", "id", "u32", ids, True)
+output_data += generate_enum_property("BlockKind", "name", "&str", names, True, "&'static str")
+output_data += generate_enum_property("BlockKind", "display_name", "&str", display_names, True, "&'static str")
+output_data += generate_enum_property("BlockKind", "hardness", "f32", hardnesses)
+output_data += generate_enum_property("BlockKind", "diggable", "bool", diggables)
+output_data += generate_enum_property("BlockKind", "transparent", "bool", transparents)
+output_data += generate_enum_property("BlockKind", "light_emission", "u8", light_emissions)
+output_data += generate_enum_property("BlockKind", "light_filter", "u8", light_filters)
+output_data += generate_enum_property("BlockKind", "solid", "bool", solids)
+output_data += material_constants
+output_data += generate_enum_property("BlockKind", "dig_multipliers", "&'static [(crate::Item, f32)]", dig_multipliers)
+output_data += generate_enum_property("BlockKind", "harvest_tools", "Option<&'static [crate::Item]>", harvest_tools)
 
-common.output("crates/blocks/data/src/block.rs", output)
+output("crates/blocks/src/block.rs", output_data)
