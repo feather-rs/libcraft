@@ -3,3 +3,6 @@ Cargo.lock
 
 # Exclude IntelliJ IDEA files.
 /.idea
+
+# ignore the pycache files created by generators
+__pycache__/
