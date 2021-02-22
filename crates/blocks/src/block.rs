@@ -10044,83 +10044,84 @@ impl BlockKind {
     }
 }
 #[allow(dead_code, non_upper_case_globals)]
-const DIG_MULTIPLIERS_rock: &[(crate::Item, f32)] = &[
-    (crate::Item::IronPickaxe, 6.0 as f32),
-    (crate::Item::WoodenPickaxe, 2.0 as f32),
-    (crate::Item::StonePickaxe, 4.0 as f32),
-    (crate::Item::DiamondPickaxe, 8.0 as f32),
-    (crate::Item::NetheritePickaxe, 9.0 as f32),
-    (crate::Item::GoldenPickaxe, 12.0 as f32),
+const DIG_MULTIPLIERS_rock: &[(libcraft_items::Item, f32)] = &[
+    (libcraft_items::Item::IronPickaxe, 6.0_f32),
+    (libcraft_items::Item::WoodenPickaxe, 2.0_f32),
+    (libcraft_items::Item::StonePickaxe, 4.0_f32),
+    (libcraft_items::Item::DiamondPickaxe, 8.0_f32),
+    (libcraft_items::Item::NetheritePickaxe, 9.0_f32),
+    (libcraft_items::Item::GoldenPickaxe, 12.0_f32),
 ];
 #[allow(dead_code, non_upper_case_globals)]
-const DIG_MULTIPLIERS_wood: &[(crate::Item, f32)] = &[
-    (crate::Item::IronAxe, 6.0 as f32),
-    (crate::Item::WoodenAxe, 2.0 as f32),
-    (crate::Item::StoneAxe, 4.0 as f32),
-    (crate::Item::DiamondAxe, 8.0 as f32),
-    (crate::Item::NetheriteAxe, 9.0 as f32),
-    (crate::Item::GoldenAxe, 12.0 as f32),
+const DIG_MULTIPLIERS_wood: &[(libcraft_items::Item, f32)] = &[
+    (libcraft_items::Item::IronAxe, 6.0_f32),
+    (libcraft_items::Item::WoodenAxe, 2.0_f32),
+    (libcraft_items::Item::StoneAxe, 4.0_f32),
+    (libcraft_items::Item::DiamondAxe, 8.0_f32),
+    (libcraft_items::Item::NetheriteAxe, 9.0_f32),
+    (libcraft_items::Item::GoldenAxe, 12.0_f32),
 ];
 #[allow(dead_code, non_upper_case_globals)]
-const DIG_MULTIPLIERS_plant: &[(crate::Item, f32)] = &[
-    (crate::Item::IronAxe, 6.0 as f32),
-    (crate::Item::IronSword, 1.5 as f32),
-    (crate::Item::WoodenSword, 1.5 as f32),
-    (crate::Item::WoodenAxe, 2.0 as f32),
-    (crate::Item::StoneSword, 1.5 as f32),
-    (crate::Item::StoneAxe, 4.0 as f32),
-    (crate::Item::DiamondSword, 1.5 as f32),
-    (crate::Item::DiamondAxe, 8.0 as f32),
-    (crate::Item::NetheriteAxe, 9.0 as f32),
-    (crate::Item::NetheriteSword, 1.5 as f32),
-    (crate::Item::GoldenSword, 1.5 as f32),
-    (crate::Item::GoldenAxe, 12.0 as f32),
+const DIG_MULTIPLIERS_plant: &[(libcraft_items::Item, f32)] = &[
+    (libcraft_items::Item::IronAxe, 6.0_f32),
+    (libcraft_items::Item::IronSword, 1.5_f32),
+    (libcraft_items::Item::WoodenSword, 1.5_f32),
+    (libcraft_items::Item::WoodenAxe, 2.0_f32),
+    (libcraft_items::Item::StoneSword, 1.5_f32),
+    (libcraft_items::Item::StoneAxe, 4.0_f32),
+    (libcraft_items::Item::DiamondSword, 1.5_f32),
+    (libcraft_items::Item::DiamondAxe, 8.0_f32),
+    (libcraft_items::Item::NetheriteAxe, 9.0_f32),
+    (libcraft_items::Item::NetheriteSword, 1.5_f32),
+    (libcraft_items::Item::GoldenSword, 1.5_f32),
+    (libcraft_items::Item::GoldenAxe, 12.0_f32),
 ];
 #[allow(dead_code, non_upper_case_globals)]
-const DIG_MULTIPLIERS_melon: &[(crate::Item, f32)] = &[
-    (crate::Item::IronSword, 1.5 as f32),
-    (crate::Item::WoodenSword, 1.5 as f32),
-    (crate::Item::StoneSword, 1.5 as f32),
-    (crate::Item::DiamondSword, 1.5 as f32),
-    (crate::Item::NetheriteSword, 1.5 as f32),
-    (crate::Item::GoldenSword, 1.5 as f32),
+const DIG_MULTIPLIERS_melon: &[(libcraft_items::Item, f32)] = &[
+    (libcraft_items::Item::IronSword, 1.5_f32),
+    (libcraft_items::Item::WoodenSword, 1.5_f32),
+    (libcraft_items::Item::StoneSword, 1.5_f32),
+    (libcraft_items::Item::DiamondSword, 1.5_f32),
+    (libcraft_items::Item::NetheriteSword, 1.5_f32),
+    (libcraft_items::Item::GoldenSword, 1.5_f32),
 ];
 #[allow(dead_code, non_upper_case_globals)]
-const DIG_MULTIPLIERS_leaves: &[(crate::Item, f32)] = &[
-    (crate::Item::IronSword, 1.5 as f32),
-    (crate::Item::WoodenSword, 1.5 as f32),
-    (crate::Item::StoneSword, 1.5 as f32),
-    (crate::Item::DiamondSword, 1.5 as f32),
-    (crate::Item::GoldenSword, 1.5 as f32),
-    (crate::Item::NetheriteSword, 1.5 as f32),
-    (crate::Item::Shears, 6.0 as f32),
+const DIG_MULTIPLIERS_leaves: &[(libcraft_items::Item, f32)] = &[
+    (libcraft_items::Item::IronSword, 1.5_f32),
+    (libcraft_items::Item::WoodenSword, 1.5_f32),
+    (libcraft_items::Item::StoneSword, 1.5_f32),
+    (libcraft_items::Item::DiamondSword, 1.5_f32),
+    (libcraft_items::Item::GoldenSword, 1.5_f32),
+    (libcraft_items::Item::NetheriteSword, 1.5_f32),
+    (libcraft_items::Item::Shears, 6.0_f32),
 ];
 #[allow(dead_code, non_upper_case_globals)]
-const DIG_MULTIPLIERS_dirt: &[(crate::Item, f32)] = &[
-    (crate::Item::IronShovel, 6.0 as f32),
-    (crate::Item::WoodenShovel, 2.0 as f32),
-    (crate::Item::StoneShovel, 4.0 as f32),
-    (crate::Item::DiamondShovel, 8.0 as f32),
-    (crate::Item::NetheriteShovel, 9.0 as f32),
-    (crate::Item::GoldenShovel, 12.0 as f32),
+const DIG_MULTIPLIERS_dirt: &[(libcraft_items::Item, f32)] = &[
+    (libcraft_items::Item::IronShovel, 6.0_f32),
+    (libcraft_items::Item::WoodenShovel, 2.0_f32),
+    (libcraft_items::Item::StoneShovel, 4.0_f32),
+    (libcraft_items::Item::DiamondShovel, 8.0_f32),
+    (libcraft_items::Item::NetheriteShovel, 9.0_f32),
+    (libcraft_items::Item::GoldenShovel, 12.0_f32),
 ];
 #[allow(dead_code, non_upper_case_globals)]
-const DIG_MULTIPLIERS_web: &[(crate::Item, f32)] = &[
-    (crate::Item::IronSword, 15.0 as f32),
-    (crate::Item::WoodenSword, 15.0 as f32),
-    (crate::Item::StoneSword, 15.0 as f32),
-    (crate::Item::DiamondSword, 15.0 as f32),
-    (crate::Item::GoldenSword, 15.0 as f32),
-    (crate::Item::NetheriteSword, 15.0 as f32),
-    (crate::Item::Shears, 15.0 as f32),
+const DIG_MULTIPLIERS_web: &[(libcraft_items::Item, f32)] = &[
+    (libcraft_items::Item::IronSword, 15.0_f32),
+    (libcraft_items::Item::WoodenSword, 15.0_f32),
+    (libcraft_items::Item::StoneSword, 15.0_f32),
+    (libcraft_items::Item::DiamondSword, 15.0_f32),
+    (libcraft_items::Item::GoldenSword, 15.0_f32),
+    (libcraft_items::Item::NetheriteSword, 15.0_f32),
+    (libcraft_items::Item::Shears, 15.0_f32),
 ];
 #[allow(dead_code, non_upper_case_globals)]
-const DIG_MULTIPLIERS_wool: &[(crate::Item, f32)] = &[(crate::Item::Shears, 4.8 as f32)];
+const DIG_MULTIPLIERS_wool: &[(libcraft_items::Item, f32)] =
+    &[(libcraft_items::Item::Shears, 4.8_f32)];
 #[allow(warnings)]
 #[allow(clippy::all)]
 impl BlockKind {
     /// Returns the `dig_multipliers` property of this `BlockKind`.
-    pub fn dig_multipliers(&self) -> &'static [(crate::Item, f32)] {
+    pub fn dig_multipliers(&self) -> &'static [(libcraft_items::Item, f32)] {
         match self {
             BlockKind::Air => &[],
             BlockKind::Stone => DIG_MULTIPLIERS_rock,
@@ -10892,76 +10893,76 @@ impl BlockKind {
 #[allow(clippy::all)]
 impl BlockKind {
     /// Returns the `harvest_tools` property of this `BlockKind`.
-    pub fn harvest_tools(&self) -> Option<&'static [crate::Item]> {
+    pub fn harvest_tools(&self) -> Option<&'static [libcraft_items::Item]> {
         match self {
             BlockKind::Air => None,
             BlockKind::Stone => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::Granite => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::PolishedGranite => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::Diorite => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::PolishedDiorite => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::Andesite => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::PolishedAndesite => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
@@ -10970,12 +10971,12 @@ impl BlockKind {
             BlockKind::CoarseDirt => None,
             BlockKind::Podzol => None,
             BlockKind::Cobblestone => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
@@ -10998,35 +10999,37 @@ impl BlockKind {
             BlockKind::RedSand => None,
             BlockKind::Gravel => None,
             BlockKind::GoldOre => {
-                const TOOLS: &[crate::Item] =
-                    &[crate::Item::IronPickaxe, crate::Item::DiamondPickaxe];
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                ];
                 Some(TOOLS)
             }
             BlockKind::IronOre => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::CoalOre => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::NetherGoldOre => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
@@ -11064,58 +11067,58 @@ impl BlockKind {
             BlockKind::WetSponge => None,
             BlockKind::Glass => None,
             BlockKind::LapisOre => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::LapisBlock => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::Dispenser => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::Sandstone => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::ChiseledSandstone => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::CutSandstone => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
@@ -11140,13 +11143,13 @@ impl BlockKind {
             BlockKind::DetectorRail => None,
             BlockKind::StickyPiston => None,
             BlockKind::Cobweb => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronSword,
-                    crate::Item::WoodenSword,
-                    crate::Item::StoneSword,
-                    crate::Item::DiamondSword,
-                    crate::Item::GoldenSword,
-                    crate::Item::Shears,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronSword,
+                    libcraft_items::Item::WoodenSword,
+                    libcraft_items::Item::StoneSword,
+                    libcraft_items::Item::DiamondSword,
+                    libcraft_items::Item::GoldenSword,
+                    libcraft_items::Item::Shears,
                 ];
                 Some(TOOLS)
             }
@@ -11190,42 +11193,44 @@ impl BlockKind {
             BlockKind::BrownMushroom => None,
             BlockKind::RedMushroom => None,
             BlockKind::GoldBlock => {
-                const TOOLS: &[crate::Item] =
-                    &[crate::Item::IronPickaxe, crate::Item::DiamondPickaxe];
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                ];
                 Some(TOOLS)
             }
             BlockKind::IronBlock => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::Bricks => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::Tnt => None,
             BlockKind::Bookshelf => None,
             BlockKind::MossyCobblestone => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::Obsidian => {
-                const TOOLS: &[crate::Item] = &[crate::Item::DiamondPickaxe];
+                const TOOLS: &[libcraft_items::Item] = &[libcraft_items::Item::DiamondPickaxe];
                 Some(TOOLS)
             }
             BlockKind::Torch => None,
@@ -11233,12 +11238,12 @@ impl BlockKind {
             BlockKind::Fire => None,
             BlockKind::SoulFire => None,
             BlockKind::Spawner => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
@@ -11246,25 +11251,29 @@ impl BlockKind {
             BlockKind::Chest => None,
             BlockKind::RedstoneWire => None,
             BlockKind::DiamondOre => {
-                const TOOLS: &[crate::Item] =
-                    &[crate::Item::IronPickaxe, crate::Item::DiamondPickaxe];
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                ];
                 Some(TOOLS)
             }
             BlockKind::DiamondBlock => {
-                const TOOLS: &[crate::Item] =
-                    &[crate::Item::IronPickaxe, crate::Item::DiamondPickaxe];
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                ];
                 Some(TOOLS)
             }
             BlockKind::CraftingTable => None,
             BlockKind::Wheat => None,
             BlockKind::Farmland => None,
             BlockKind::Furnace => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
@@ -11278,12 +11287,12 @@ impl BlockKind {
             BlockKind::Ladder => None,
             BlockKind::Rail => None,
             BlockKind::CobblestoneStairs => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
@@ -11295,22 +11304,22 @@ impl BlockKind {
             BlockKind::DarkOakWallSign => None,
             BlockKind::Lever => None,
             BlockKind::StonePressurePlate => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::IronDoor => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
@@ -11321,31 +11330,33 @@ impl BlockKind {
             BlockKind::AcaciaPressurePlate => None,
             BlockKind::DarkOakPressurePlate => None,
             BlockKind::RedstoneOre => {
-                const TOOLS: &[crate::Item] =
-                    &[crate::Item::IronPickaxe, crate::Item::DiamondPickaxe];
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                ];
                 Some(TOOLS)
             }
             BlockKind::RedstoneTorch => None,
             BlockKind::RedstoneWallTorch => None,
             BlockKind::StoneButton => None,
             BlockKind::Snow => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronShovel,
-                    crate::Item::WoodenShovel,
-                    crate::Item::StoneShovel,
-                    crate::Item::DiamondShovel,
-                    crate::Item::GoldenShovel,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronShovel,
+                    libcraft_items::Item::WoodenShovel,
+                    libcraft_items::Item::StoneShovel,
+                    libcraft_items::Item::DiamondShovel,
+                    libcraft_items::Item::GoldenShovel,
                 ];
                 Some(TOOLS)
             }
             BlockKind::Ice => None,
             BlockKind::SnowBlock => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronShovel,
-                    crate::Item::WoodenShovel,
-                    crate::Item::StoneShovel,
-                    crate::Item::DiamondShovel,
-                    crate::Item::GoldenShovel,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronShovel,
+                    libcraft_items::Item::WoodenShovel,
+                    libcraft_items::Item::StoneShovel,
+                    libcraft_items::Item::DiamondShovel,
+                    libcraft_items::Item::GoldenShovel,
                 ];
                 Some(TOOLS)
             }
@@ -11356,34 +11367,34 @@ impl BlockKind {
             BlockKind::OakFence => None,
             BlockKind::Pumpkin => None,
             BlockKind::Netherrack => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::SoulSand => None,
             BlockKind::SoulSoil => None,
             BlockKind::Basalt => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::PolishedBasalt => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
@@ -11418,102 +11429,102 @@ impl BlockKind {
             BlockKind::AcaciaTrapdoor => None,
             BlockKind::DarkOakTrapdoor => None,
             BlockKind::StoneBricks => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::MossyStoneBricks => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::CrackedStoneBricks => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::ChiseledStoneBricks => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::InfestedStone => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::InfestedCobblestone => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::InfestedStoneBricks => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::InfestedMossyStoneBricks => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::InfestedCrackedStoneBricks => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::InfestedChiseledStoneBricks => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
@@ -11521,22 +11532,22 @@ impl BlockKind {
             BlockKind::RedMushroomBlock => None,
             BlockKind::MushroomStem => None,
             BlockKind::IronBars => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::Chain => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
@@ -11549,97 +11560,97 @@ impl BlockKind {
             BlockKind::Vine => None,
             BlockKind::OakFenceGate => None,
             BlockKind::BrickStairs => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::StoneBrickStairs => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::Mycelium => None,
             BlockKind::LilyPad => None,
             BlockKind::NetherBricks => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::NetherBrickFence => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::NetherBrickStairs => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::NetherWart => None,
             BlockKind::EnchantingTable => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::BrewingStand => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::Cauldron => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::EndPortal => None,
             BlockKind::EndPortalFrame => None,
             BlockKind::EndStone => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
@@ -11647,35 +11658,39 @@ impl BlockKind {
             BlockKind::RedstoneLamp => None,
             BlockKind::Cocoa => None,
             BlockKind::SandstoneStairs => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::EmeraldOre => {
-                const TOOLS: &[crate::Item] =
-                    &[crate::Item::IronPickaxe, crate::Item::DiamondPickaxe];
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                ];
                 Some(TOOLS)
             }
             BlockKind::EnderChest => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::TripwireHook => None,
             BlockKind::Tripwire => None,
             BlockKind::EmeraldBlock => {
-                const TOOLS: &[crate::Item] =
-                    &[crate::Item::IronPickaxe, crate::Item::DiamondPickaxe];
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                ];
                 Some(TOOLS)
             }
             BlockKind::SpruceStairs => None,
@@ -11684,22 +11699,22 @@ impl BlockKind {
             BlockKind::CommandBlock => None,
             BlockKind::Beacon => None,
             BlockKind::CobblestoneWall => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::MossyCobblestoneWall => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
@@ -11749,296 +11764,296 @@ impl BlockKind {
             BlockKind::DragonHead => None,
             BlockKind::DragonWallHead => None,
             BlockKind::Anvil => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::ChippedAnvil => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::DamagedAnvil => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::TrappedChest => None,
             BlockKind::LightWeightedPressurePlate => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::HeavyWeightedPressurePlate => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::Comparator => None,
             BlockKind::DaylightDetector => None,
             BlockKind::RedstoneBlock => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::NetherQuartzOre => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::Hopper => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::QuartzBlock => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::ChiseledQuartzBlock => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::QuartzPillar => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::QuartzStairs => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::ActivatorRail => None,
             BlockKind::Dropper => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::WhiteTerracotta => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::OrangeTerracotta => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::MagentaTerracotta => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::LightBlueTerracotta => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::YellowTerracotta => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::LimeTerracotta => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::PinkTerracotta => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::GrayTerracotta => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::LightGrayTerracotta => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::CyanTerracotta => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::PurpleTerracotta => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::BlueTerracotta => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::BrownTerracotta => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::GreenTerracotta => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::RedTerracotta => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::BlackTerracotta => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
@@ -12063,102 +12078,102 @@ impl BlockKind {
             BlockKind::SlimeBlock => None,
             BlockKind::Barrier => None,
             BlockKind::IronTrapdoor => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::Prismarine => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::PrismarineBricks => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::DarkPrismarine => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::PrismarineStairs => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::PrismarineBrickStairs => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::DarkPrismarineStairs => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::PrismarineSlab => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::PrismarineBrickSlab => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::DarkPrismarineSlab => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
@@ -12181,22 +12196,22 @@ impl BlockKind {
             BlockKind::RedCarpet => None,
             BlockKind::BlackCarpet => None,
             BlockKind::Terracotta => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::CoalBlock => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
@@ -12205,12 +12220,12 @@ impl BlockKind {
             BlockKind::Lilac => None,
             BlockKind::RoseBush => None,
             BlockKind::Peony => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
@@ -12249,272 +12264,272 @@ impl BlockKind {
             BlockKind::RedWallBanner => None,
             BlockKind::BlackWallBanner => None,
             BlockKind::RedSandstone => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::ChiseledRedSandstone => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::CutRedSandstone => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::RedSandstoneStairs => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::OakSlab => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::SpruceSlab => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::BirchSlab => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::JungleSlab => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::AcaciaSlab => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::DarkOakSlab => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::StoneSlab => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::SmoothStoneSlab => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::SandstoneSlab => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::CutSandstoneSlab => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::PetrifiedOakSlab => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::CobblestoneSlab => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::BrickSlab => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::StoneBrickSlab => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::NetherBrickSlab => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::QuartzSlab => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::RedSandstoneSlab => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::CutRedSandstoneSlab => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::PurpurSlab => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::SmoothStone => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::SmoothSandstone => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::SmoothQuartz => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::SmoothRedSandstone => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
@@ -12537,42 +12552,42 @@ impl BlockKind {
             BlockKind::ChorusPlant => None,
             BlockKind::ChorusFlower => None,
             BlockKind::PurpurBlock => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::PurpurPillar => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::PurpurStairs => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::EndStoneBricks => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
@@ -12583,44 +12598,44 @@ impl BlockKind {
             BlockKind::ChainCommandBlock => None,
             BlockKind::FrostedIce => None,
             BlockKind::MagmaBlock => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::NetherWartBlock => None,
             BlockKind::RedNetherBricks => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::BoneBlock => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::StructureVoid => None,
             BlockKind::Observer => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
@@ -12642,322 +12657,322 @@ impl BlockKind {
             BlockKind::RedShulkerBox => None,
             BlockKind::BlackShulkerBox => None,
             BlockKind::WhiteGlazedTerracotta => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::OrangeGlazedTerracotta => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::MagentaGlazedTerracotta => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::LightBlueGlazedTerracotta => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::YellowGlazedTerracotta => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::LimeGlazedTerracotta => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::PinkGlazedTerracotta => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::GrayGlazedTerracotta => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::LightGrayGlazedTerracotta => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::CyanGlazedTerracotta => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::PurpleGlazedTerracotta => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::BlueGlazedTerracotta => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::BrownGlazedTerracotta => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::GreenGlazedTerracotta => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::RedGlazedTerracotta => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::BlackGlazedTerracotta => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::WhiteConcrete => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::OrangeConcrete => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::MagentaConcrete => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::LightBlueConcrete => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::YellowConcrete => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::LimeConcrete => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::PinkConcrete => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::GrayConcrete => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::LightGrayConcrete => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::CyanConcrete => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::PurpleConcrete => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::BlueConcrete => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::BrownConcrete => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::GreenConcrete => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::RedConcrete => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::BlackConcrete => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
@@ -12982,102 +12997,102 @@ impl BlockKind {
             BlockKind::DriedKelpBlock => None,
             BlockKind::TurtleEgg => None,
             BlockKind::DeadTubeCoralBlock => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::DeadBrainCoralBlock => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::DeadBubbleCoralBlock => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::DeadFireCoralBlock => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::DeadHornCoralBlock => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::TubeCoralBlock => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::BrainCoralBlock => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::BubbleCoralBlock => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::FireCoralBlock => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::HornCoralBlock => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
@@ -13132,264 +13147,264 @@ impl BlockKind {
             BlockKind::GraniteStairs => None,
             BlockKind::AndesiteStairs => None,
             BlockKind::RedNetherBrickStairs => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::PolishedAndesiteStairs => None,
             BlockKind::DioriteStairs => None,
             BlockKind::PolishedGraniteSlab => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::SmoothRedSandstoneSlab => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::MossyStoneBrickSlab => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::PolishedDioriteSlab => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::MossyCobblestoneSlab => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::EndStoneBrickSlab => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::SmoothSandstoneSlab => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::SmoothQuartzSlab => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::GraniteSlab => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::AndesiteSlab => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::RedNetherBrickSlab => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::PolishedAndesiteSlab => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::DioriteSlab => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::BrickWall => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::PrismarineWall => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::RedSandstoneWall => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::MossyStoneBrickWall => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::GraniteWall => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::StoneBrickWall => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::NetherBrickWall => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::AndesiteWall => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::RedNetherBrickWall => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::SandstoneWall => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::EndStoneBrickWall => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::DioriteWall => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
@@ -13397,34 +13412,34 @@ impl BlockKind {
             BlockKind::Loom => None,
             BlockKind::Barrel => None,
             BlockKind::Smoker => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::BlastFurnace => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::CartographyTable => None,
             BlockKind::FletchingTable => None,
             BlockKind::Grindstone => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
@@ -13433,22 +13448,22 @@ impl BlockKind {
             BlockKind::Stonecutter => None,
             BlockKind::Bell => None,
             BlockKind::Lantern => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::SoulLantern => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
@@ -13460,12 +13475,12 @@ impl BlockKind {
             BlockKind::WarpedHyphae => None,
             BlockKind::StrippedWarpedHyphae => None,
             BlockKind::WarpedNylium => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
@@ -13478,12 +13493,12 @@ impl BlockKind {
             BlockKind::CrimsonHyphae => None,
             BlockKind::StrippedCrimsonHyphae => None,
             BlockKind::CrimsonNylium => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
@@ -13499,22 +13514,22 @@ impl BlockKind {
             BlockKind::CrimsonSlab => None,
             BlockKind::WarpedSlab => None,
             BlockKind::CrimsonPressurePlate => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::WarpedPressurePlate => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
@@ -13543,19 +13558,19 @@ impl BlockKind {
             BlockKind::HoneyBlock => None,
             BlockKind::HoneycombBlock => None,
             BlockKind::NetheriteBlock => {
-                const TOOLS: &[crate::Item] = &[crate::Item::DiamondPickaxe];
+                const TOOLS: &[libcraft_items::Item] = &[libcraft_items::Item::DiamondPickaxe];
                 Some(TOOLS)
             }
             BlockKind::AncientDebris => {
-                const TOOLS: &[crate::Item] = &[crate::Item::DiamondPickaxe];
+                const TOOLS: &[libcraft_items::Item] = &[libcraft_items::Item::DiamondPickaxe];
                 Some(TOOLS)
             }
             BlockKind::CryingObsidian => {
-                const TOOLS: &[crate::Item] = &[crate::Item::DiamondPickaxe];
+                const TOOLS: &[libcraft_items::Item] = &[libcraft_items::Item::DiamondPickaxe];
                 Some(TOOLS)
             }
             BlockKind::RespawnAnchor => {
-                const TOOLS: &[crate::Item] = &[crate::Item::DiamondPickaxe];
+                const TOOLS: &[libcraft_items::Item] = &[libcraft_items::Item::DiamondPickaxe];
                 Some(TOOLS)
             }
             BlockKind::PottedCrimsonFungus => None,
@@ -13563,64 +13578,64 @@ impl BlockKind {
             BlockKind::PottedCrimsonRoots => None,
             BlockKind::PottedWarpedRoots => None,
             BlockKind::Lodestone => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::Blackstone => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::BlackstoneStairs => None,
             BlockKind::BlackstoneWall => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::BlackstoneSlab => None,
             BlockKind::PolishedBlackstone => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::PolishedBlackstoneBricks => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::CrackedPolishedBlackstoneBricks => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
@@ -13628,75 +13643,75 @@ impl BlockKind {
             BlockKind::PolishedBlackstoneBrickSlab => None,
             BlockKind::PolishedBlackstoneBrickStairs => None,
             BlockKind::PolishedBlackstoneBrickWall => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::GildedBlackstone => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::PolishedBlackstoneStairs => None,
             BlockKind::PolishedBlackstoneSlab => None,
             BlockKind::PolishedBlackstonePressurePlate => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::PolishedBlackstoneButton => None,
             BlockKind::PolishedBlackstoneWall => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::ChiseledNetherBricks => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::CrackedNetherBricks => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }
             BlockKind::QuartzBricks => {
-                const TOOLS: &[crate::Item] = &[
-                    crate::Item::IronPickaxe,
-                    crate::Item::WoodenPickaxe,
-                    crate::Item::StonePickaxe,
-                    crate::Item::DiamondPickaxe,
-                    crate::Item::GoldenPickaxe,
+                const TOOLS: &[libcraft_items::Item] = &[
+                    libcraft_items::Item::IronPickaxe,
+                    libcraft_items::Item::WoodenPickaxe,
+                    libcraft_items::Item::StonePickaxe,
+                    libcraft_items::Item::DiamondPickaxe,
+                    libcraft_items::Item::GoldenPickaxe,
                 ];
                 Some(TOOLS)
             }

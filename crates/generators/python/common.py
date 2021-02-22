@@ -1,14 +1,9 @@
-# Common code shared by most code generators.
+"""Common code shared by most code generators."""
 
-import subprocess
-import json
+from subprocess import run
+from json import load
 from re import split
 from pathlib import Path
-
-
-def rustfmt(file_path):
-    """ Runs rustfmt on a file"""
-    subprocess.run(["rustfmt", file_path])
 
 
 LIBCRAFT_ROOT = Path(__file__).parents[3]
@@ -16,7 +11,12 @@ PRISMARINEJS_BASE_PATH = Path(__file__).parents[1] / "minecraft-data" / "data" /
 FEATHER_BASE_PATH = Path(__file__).parents[1] / "feather"
 
 
-def load_minecraft_json(name: str, version="1.16.1"):
+def rustfmt(file_path):
+    """ Runs rustfmt on a file"""
+    run(["rustfmt", file_path])
+
+
+def load_minecraft_json(name: str, version="1.16.1") -> dict:
     """
     Loads a JSON file from the minecraft-data sub repository.
 
@@ -28,11 +28,10 @@ def load_minecraft_json(name: str, version="1.16.1"):
         A dict containing JSON content
     """
     file = open(PRISMARINEJS_BASE_PATH / version / name)
-    return json.load(file)
+    return load(file)
 
 
-# Loads in a JSON file from the feather file with the given name.
-def load_feather_json(name: str):
+def load_feather_json(name: str) -> dict:
     """
     Loads a JSON file from the feather directory
 
@@ -43,7 +42,7 @@ def load_feather_json(name: str):
         A dict containing JSON contents
     """
     file = open(FEATHER_BASE_PATH / name)
-    return json.load(file)
+    return load(file)
 
 
 def output(path: str, content: str):
@@ -78,7 +77,7 @@ def generate_enum_property(
         # Property type that should be returned. This is used when the type has a lifetime, such as &'static str
         # Whether to bind enum fields using Enum::Variant { .. }
         needs_bindings=False,
-):
+) -> str:
     """
     Generates lookup functions for an enum.
 
@@ -142,7 +141,7 @@ def generate_enum_property(
     return result
 
 
-def generate_enum(name: str, variants: list[str]):
+def generate_enum(name: str, variants: list[str]) -> str:
     """Generates an enum definition with the provided variants."""
     body = ','.join(variants) + ','
 
@@ -154,6 +153,6 @@ def generate_enum(name: str, variants: list[str]):
     """
 
 
-def camel_case(string: str):
+def camel_case(string: str) -> str:
     """Converts a string to UpperCamelCase."""
     return ''.join(a.capitalize() for a in split('([^a-zA-Z0-9])', string) if a.isalnum())

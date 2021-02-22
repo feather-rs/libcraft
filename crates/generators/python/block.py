@@ -1,5 +1,6 @@
 from common import load_minecraft_json, camel_case, generate_enum, generate_enum_property, output
 
+
 # build item ID => item kind index
 item_kinds_by_id = {}
 for item in load_minecraft_json("items.json"):
@@ -19,9 +20,9 @@ material_constant_refs = {}
 for name, dig_multipliers in material_dig_multipliers.items():
     dm = ""
     for item, multiplier in dig_multipliers.items():
-        dm += f"(crate::Item::{item}, {multiplier} as f32),"
+        dm += f"(libcraft_items::Item::{item}, {multiplier}_f32),"
     constant = f"DIG_MULTIPLIERS_{name}"
-    material_constants += f"#[allow(dead_code, non_upper_case_globals)] const {constant}: &[(crate::Item, f32)] = &[{dm}];"
+    material_constants += f"#[allow(dead_code, non_upper_case_globals)] const {constant}: &[(libcraft_items::Item, f32)] = &[{dm}];"
     material_constant_refs[name] = constant
 
 blocks = []
@@ -65,13 +66,13 @@ for block in load_minecraft_json("blocks.json"):
     ht = ""
     for tool_id in block.get('harvestTools', {}):
         kind = item_kinds_by_id[int(tool_id)]
-        ht += f"crate::Item::{kind},"
+        ht += f"libcraft_items::Item::{kind},"
 
     if len(ht) == 0:
         harvest_tools[variant] = 'None'
     else:
         harvest_tools[variant] = f"""
-        const TOOLS: &[crate::Item] = &[{ht}];
+        const TOOLS: &[libcraft_items::Item] = &[{ht}];
         Some(TOOLS)
         """
 
@@ -86,7 +87,9 @@ output_data += generate_enum_property("BlockKind", "light_emission", "u8", light
 output_data += generate_enum_property("BlockKind", "light_filter", "u8", light_filters)
 output_data += generate_enum_property("BlockKind", "solid", "bool", solids)
 output_data += material_constants
-output_data += generate_enum_property("BlockKind", "dig_multipliers", "&'static [(crate::Item, f32)]", dig_multipliers)
-output_data += generate_enum_property("BlockKind", "harvest_tools", "Option<&'static [crate::Item]>", harvest_tools)
+output_data += generate_enum_property("BlockKind", "dig_multipliers",
+                                      "&'static [(libcraft_items::Item, f32)]", dig_multipliers)
+output_data += generate_enum_property("BlockKind", "harvest_tools",
+                                      "Option<&'static [libcraft_items::Item]>", harvest_tools)
 
 output("crates/blocks/src/block.rs", output_data)
