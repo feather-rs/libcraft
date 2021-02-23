@@ -5,8 +5,8 @@ mod consts;
 mod enchantment;
 mod gamemode;
 mod gamerules;
-mod positions;
 mod playsound;
+mod positions;
 
 pub use consts::*;
 pub use enchantment::{Enchantment, EnchantmentKind};
