@@ -9,8 +9,9 @@ Running these scripts requires `rustfmt`, `cargo` and `python` 3.6 or greater. N
 
 `libcraft-generators` currently provides the following generators:
 * Generator for `Biome` enum in `libcraft-core`
-* Generator for `EntityKind` enum in `libcraft-core`
 * Generator for `BlockKind` enum in `libcraft-blocks`
+* Generator for `EntityKind` enum in `libcraft-core`
+* Generator for `Item` enum in `libcraft-items` 
 * Generator for `SimplifiedBlockKind` enum in `libcraft-blocks`
 * Generator for `Particle` enum in `libcraft-core`
 * Generator for the block state lookup table
