@@ -1,5 +1,7 @@
 # libcraft
 
+**Notice**: `libcraft` has been moved to the [main Feather repository](https://github.com/feather-rs/feather). Issues and PRs should be made there instead.
+
 General-purpose Minecraft types and functions for Rust. Work in progress; code is being moved from the [Feather repository](https://github.com/feather-rs/feather).
 
 Once finished, this crate will provide:
